@@ -8,7 +8,9 @@ module Orats
   module Commands
     class New < Common
       AVAILABLE_TEMPLATES = {
-        base: 'dockerized production ready application'
+        base: 'dockerized production ready application using Postgres',
+        base_mysql: 'dockerized production ready application using MySQL',
+        api_mysql: 'dockerized production ready Rails 5 API application using MySQL'
       }.freeze
 
       def initialize(target_path = '', options = {})
