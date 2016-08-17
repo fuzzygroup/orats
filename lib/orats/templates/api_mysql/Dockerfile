@@ -22,7 +22,7 @@ MAINTAINER Nick Janetakis <nick.janetakis@gmail.com>
 # todo needs to be the crap for mysql
 #
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
-      build-essential nodejs libpq-dev
+      build-essential nodejs libmysqlclient-dev
 # Ensure that our apt package list is updated and install a few
 # packages to ensure that we can compile assets (nodejs) and
 # communicate with PostgreSQL (libpq-dev).
