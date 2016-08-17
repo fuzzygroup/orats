@@ -10,7 +10,9 @@ module Orats
       AVAILABLE_TEMPLATES = {
         base: 'dockerized production ready application using Postgres',
         base_mysql: 'dockerized production ready application using MySQL',
-        api_mysql: 'dockerized production ready Rails 5 API application using MySQL'
+        api_mysql: 'dockerized production ready Rails 5 API application using MySQL',
+        api_external_mysql_external_redis: 'dockerized production ready Rails 5 API application using MySQL with mysql and redis coming from an external source not a docker volume',
+        base_external_mysql_external_redis: 'dockerized production ready Rails 5 application using MySQL with mysql and redis coming from an external source not a docker volume'
       }.freeze
 
       def initialize(target_path = '', options = {})
